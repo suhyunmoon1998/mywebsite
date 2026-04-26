@@ -2,7 +2,7 @@ export const profile = {
   name: 'Soo Hyun Mun',
   title: 'Full-Stack Engineer',
   location: 'Los Angeles, CA / Remote',
-  email: 'soohyunmoon1998@gmail.com',
+  email: 'suhyunmoon1998@gmail.com',
   phone: '(808) 208-4090',
   languages: ['English', 'Korean']
 };

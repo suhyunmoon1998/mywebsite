@@ -22,18 +22,22 @@ export default function Contact() {
           {profile.phone}
         </a>
         <a
-          href="#"
+          href="https://github.com/suhyunmoon1998"
+          target="_blank"
+          rel="noreferrer"
           className="magnetic-btn rounded-full border border-cyan-100/25 bg-cyan-100/10 px-5 py-2 text-sm font-medium text-cyan-100"
-          aria-label="GitHub placeholder"
+          aria-label="GitHub profile"
         >
-          GitHub (Add Link)
+          GitHub
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/soohyun-mun-09b486133"
+          target="_blank"
+          rel="noreferrer"
           className="magnetic-btn rounded-full border border-white/15 bg-white/[0.03] px-5 py-2 text-sm font-medium text-white/85"
-          aria-label="LinkedIn placeholder"
+          aria-label="LinkedIn profile"
         >
-          LinkedIn (Add Link)
+          LinkedIn
         </a>
       </div>
     </div>
