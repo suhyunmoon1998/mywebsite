@@ -11,7 +11,7 @@ export const heroMessage =
   'Full-Stack Engineer building practical web systems, automation workflows, AI-assisted development tools, and Twilio-powered communication features.';
 
 export const about =
-  'Soo Hyun Mun is a Computer Science graduate from UCLA with hands-on experience in full-stack development, CRM systems, real-estate web platforms, MLS database support, legal-office software workflows, AI-assisted coding, and Twilio phone-system integrations. He is a fast learner with strong software engineering fundamentals and experience building practical tools for business operations.';
+  'I am a Computer Science graduate from UCLA with hands-on experience in full-stack development, CRM systems, real-estate web platforms, MLS database support, legal-office software workflows, AI-assisted coding, and Twilio phone-system integrations. I am a fast learner with strong software engineering fundamentals, and I enjoy building practical tools that improve everyday business operations.';
 
 export const coreStrengths = [
   {
