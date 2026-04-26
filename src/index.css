@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glow-x: 50%;
+  --glow-y: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Sora', 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  background: #05070d;
+  color: #f5f7ff;
+}
+
+.mouse-glow {
+  opacity: 0.38;
+  background:
+    radial-gradient(
+      650px circle at var(--glow-x) var(--glow-y),
+      rgba(255, 192, 128, 0.16),
+      rgba(64, 198, 255, 0.07) 20%,
+      rgba(7, 10, 17, 0) 55%
+    );
+}
+
+.subtle-grid {
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.4), transparent 78%);
+}
+
+.subtle-noise {
+  opacity: 0.08;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.45) 0.55px, transparent 0.55px);
+  background-size: 4px 4px;
+  mix-blend-mode: soft-light;
+}
+
+.hero-border-glow {
+  position: relative;
+}
+
+.hero-border-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 120deg,
+    rgba(255, 197, 136, 0.2),
+    rgba(102, 201, 255, 0.18),
+    rgba(198, 170, 255, 0.16),
+    rgba(255, 197, 136, 0.2)
+  );
+  filter: blur(14px);
+  animation: spinGlow 8s linear infinite;
+}
+
+@keyframes spinGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.magnetic-btn {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.magnetic-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation: none !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .mouse-glow {
+    display: none;
+  }
+}
