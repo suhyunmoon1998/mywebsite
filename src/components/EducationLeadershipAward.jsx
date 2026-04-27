@@ -1,9 +1,11 @@
 import { award, education, leadership } from '../data';
+import uclaLogo from '../assets/logos/ucla-logo.svg';
 
 export default function EducationLeadershipAward() {
   return (
     <div className="grid gap-4 lg:grid-cols-3">
       <article className="rounded-2xl border border-stone-300 bg-white/70 p-6 transition hover:border-stone-400 hover:shadow-card">
+        <img src={uclaLogo} alt="UCLA logo" className="mb-4 h-10 w-auto object-contain" loading="lazy" />
         <h2 className="text-xl font-semibold text-slate-900">Education</h2>
         <p className="mt-3 text-sm text-slate-800">{education.degree}</p>
         <p className="text-sm text-sky-700">{education.school}</p>
