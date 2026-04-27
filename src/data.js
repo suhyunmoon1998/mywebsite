@@ -117,7 +117,7 @@ export const leadership = {
 };
 
 export const award = {
-  title: '2nd Place Winner, DVC Hackathon',
+  title: '1st Place Winner, DVC Hackathon',
   period: '2020',
   description:
     'Developed a peer-to-peer cash-support app prototype within 48 hours. Contributed to idea brainstorming, user-flow design, teamwork, and technical execution. Recognized for innovative problem-solving among over 20 teams.'
