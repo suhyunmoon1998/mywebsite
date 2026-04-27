@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Sora"', '"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif']
+        sans: ['"Patrick Hand"', '"Caveat"', 'cursive']
       },
       colors: {
         base: {
