@@ -17,35 +17,38 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Sora', 'Manrope', ui-sans-serif, system-ui, sans-serif;
-  background: #05070d;
-  color: #f5f7ff;
+  background: #f3f3ef;
+  color: #0f172a;
 }
 
 .mouse-glow {
-  opacity: 0.38;
+  opacity: 0.45;
   background:
     radial-gradient(
-      650px circle at var(--glow-x) var(--glow-y),
-      rgba(255, 192, 128, 0.16),
-      rgba(64, 198, 255, 0.07) 20%,
-      rgba(7, 10, 17, 0) 55%
+      620px circle at var(--glow-x) var(--glow-y),
+      rgba(255, 212, 160, 0.28),
+      rgba(160, 173, 189, 0.14) 26%,
+      rgba(243, 243, 239, 0) 58%
     );
 }
 
 .subtle-grid {
-  opacity: 0.18;
+  opacity: 0.14;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.4), transparent 78%);
+    linear-gradient(rgba(75, 85, 99, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(75, 85, 99, 0.07) 1px, transparent 1px);
+  background-size: 62px 62px;
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.42), transparent 80%);
 }
 
-.subtle-noise {
-  opacity: 0.08;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.45) 0.55px, transparent 0.55px);
-  background-size: 4px 4px;
-  mix-blend-mode: soft-light;
+.concrete-noise {
+  opacity: 0.24;
+  background-image:
+    radial-gradient(rgba(113, 113, 122, 0.22) 0.85px, transparent 0.85px),
+    radial-gradient(rgba(82, 82, 91, 0.14) 0.6px, transparent 0.6px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 1px 2px;
+  mix-blend-mode: multiply;
 }
 
 .hero-border-glow {
@@ -60,13 +63,13 @@ body {
   border-radius: inherit;
   background: conic-gradient(
     from 120deg,
-    rgba(255, 197, 136, 0.2),
-    rgba(102, 201, 255, 0.18),
-    rgba(198, 170, 255, 0.16),
-    rgba(255, 197, 136, 0.2)
+    rgba(251, 191, 36, 0.18),
+    rgba(125, 211, 252, 0.16),
+    rgba(161, 161, 170, 0.14),
+    rgba(251, 191, 36, 0.18)
   );
-  filter: blur(14px);
-  animation: spinGlow 8s linear infinite;
+  filter: blur(13px);
+  animation: spinGlow 10s linear infinite;
 }
 
 @keyframes spinGlow {

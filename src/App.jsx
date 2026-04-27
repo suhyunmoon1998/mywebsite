@@ -47,7 +47,7 @@ export default function App() {
   const scrollProgress = useScrollProgress();
 
   return (
-    <div className="relative min-h-screen bg-base-900 text-slate-100">
+    <div className="relative min-h-screen bg-stone-100 text-slate-900">
       <BackgroundLanterns scrollProgress={scrollProgress} />
       <MouseGlow />
 

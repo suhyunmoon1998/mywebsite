@@ -14,8 +14,8 @@ export default {
         }
       },
       boxShadow: {
-        card: '0 24px 40px -30px rgba(255, 191, 102, 0.35), 0 8px 24px -16px rgba(42, 157, 244, 0.22)',
-        glow: '0 0 0 1px rgba(255, 194, 112, 0.28), 0 0 24px rgba(255, 175, 92, 0.24)'
+        card: '0 18px 32px -24px rgba(24, 24, 27, 0.28), 0 6px 16px -12px rgba(148, 163, 184, 0.32)',
+        glow: '0 0 0 1px rgba(251, 191, 36, 0.34), 0 0 18px rgba(251, 191, 36, 0.26)'
       },
       keyframes: {
         float: {
